@@ -7,6 +7,7 @@ ID=$(id -u)
 if [ $ID -ne 0 ]
 then
     echo "ERROR:: Please run script with root access"
+    exit 1 #other than zero
 else
     echo "You are root user"
 fi
