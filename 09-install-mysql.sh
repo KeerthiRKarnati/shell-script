@@ -2,7 +2,7 @@
 
 ID=$(id -u)
 
-echo "$ID"
+#echo "$ID"
 
 if [ $ID -ne 0 ]
 then
