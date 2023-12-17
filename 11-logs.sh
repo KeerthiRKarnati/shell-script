@@ -5,7 +5,10 @@ TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 R="\e[31m"
 G="\e[32m"
+Y="\e[33m"
 N="\e[0m"
+
+echo -e "Script started executed at $Y $TIMESTAMP $N"
 
 VALIDATE(){
     if [ $1 -ne 0 ]
@@ -32,3 +35,5 @@ VALIDATE $? "Installing MYSQL"
 yum install git -y &>> $LOGFILE
 
 VALIDATE $? "Installing GIT"
+
+echo -e "Script Ended executed at $Y $TIMESTAMP $N"
