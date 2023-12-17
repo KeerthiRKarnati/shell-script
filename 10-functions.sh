@@ -8,7 +8,7 @@ VALIDATE(){
         echo "Error:: $2 ... failed"
         exit 1 #if error arises you can't proceed, give other than zero
     else
-        echo "Installing $2 ... success"
+        echo "$2 ... success"
     fi
 }
 
