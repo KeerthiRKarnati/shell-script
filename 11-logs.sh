@@ -8,7 +8,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-echo -e "Script started executed at $Y $TIMESTAMP $N"
+echo -e "Script started executed at $Y $TIMESTAMP $N" &>> $LOGFILE
 
 VALIDATE(){
     if [ $1 -ne 0 ]
@@ -36,4 +36,4 @@ yum install git -y &>> $LOGFILE
 
 VALIDATE $? "Installing GIT"
 
-echo -e "Script Ended executed at $Y $TIMESTAMP $N"
+echo -e "Script Ended executed at $Y $TIMESTAMP $N" &>> $LOGFILE
