@@ -8,3 +8,5 @@ SUM=$(("$NUMBER1+$NUMBER2"))
 echo "Sum is :: $SUM"
 
 echo "How many args passed:: $#"
+
+echo "All args passed:: $@"
