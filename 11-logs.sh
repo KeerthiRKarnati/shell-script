@@ -19,7 +19,7 @@ VALIDATE(){
 
 if [ $ID -ne 0 ]
 then 
-    echo -e "Error:: Please $R run the script with root user $N"
+    echo -e "$R Error:: Please run the script with root user $N"
     exit 1 #if error arises you can't proceed, give other than zero
 else
     echo -e "You are $G root $N user"
